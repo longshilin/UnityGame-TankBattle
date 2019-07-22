@@ -7,7 +7,8 @@ public class ChatClient : MonoBehaviour
 {
     Socket socket; // 定义套接字
 
-    public InputField inputField;
+    public InputField inputAddress; // 输入的IP+Port
+    public InputField inputMessage; // 输入的消息
     public Text result;
 
     // 接收缓冲区
@@ -20,7 +21,7 @@ public class ChatClient : MonoBehaviour
         // socket
         socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
         // connnect
-        socket.BeginConnect("127.0.0.1", 14444, ConnnectCallback, socket);
+        socket.BeginConnect(inputAddress.text, 14444, ConnnectCallback, socket);
     }
 
     // Connect回调
@@ -60,7 +61,7 @@ public class ChatClient : MonoBehaviour
     public void Send()
     {
         // Send
-        string sendStr = inputField.text;
+        string sendStr = inputMessage.text;
         byte[] sendBytes = System.Text.Encoding.Default.GetBytes(sendStr);
         socket.BeginSend(sendBytes, 0, sendBytes.Length, 0, SendCallback, socket);
     }
