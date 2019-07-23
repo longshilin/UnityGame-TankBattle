@@ -933,6 +933,7 @@ GameObject:
   - component: {fileID: 891378275}
   - component: {fileID: 891378274}
   - component: {fileID: 891378273}
+  - component: {fileID: 7397954975213858283}
   m_Layer: 0
   m_Name: Ethan
   m_TagString: Untagged
@@ -990,6 +991,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1.2
   desc: 
+--- !u!136 &7397954975213858283
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891378272}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.42
+  m_Height: 1.73
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.78, z: 0}
 --- !u!1 &909462285
 GameObject:
   m_ObjectHideFlags: 0

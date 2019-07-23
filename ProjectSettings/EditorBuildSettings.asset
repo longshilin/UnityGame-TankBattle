@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/LearnUnityNet/Chapter 01/04 Sync Chat Application/FinalChatClient.unity
-    guid: 44093e0b7ec1a0344a90520c80cddd0c
+    path: Assets/LearnUnityNet/Chapter 02/Game.unity
+    guid: a3bff2a2e2f5f5f4da0a573a461f3a39
   m_configObjects: {}
